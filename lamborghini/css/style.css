@@ -75,7 +75,7 @@ background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
 }
 
 .promo {
-  background-image: url(../images/promo.jpg);
+  background-image: url(../images/promo-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
