@@ -1,11 +1,37 @@
+const menuBtn = document.querySelector('.menu-btn')
+const menuMobile = document.querySelector('.menu-mobile')
+const menuItems = document.querySelectorAll('.menu-mobile > .menu-item a')
+console.log(menuItems);
+
+menuBtn.addEventListener('click', () => {
+  menuMobile.classList.toggle('menu--open')
+  menuBtn.classList.toggle('menu-btn--open')
+}, false)
+
+menuItems.forEach((menuItem)=>{
+	menuItem.addEventListener('click', () => {
+		menuMobile.classList.toggle('menu--open')
+		menuBtn.classList.toggle('menu-btn--open')
+	}, false)
+})
+
 const swiper = new Swiper('.swiper', {
   slidesPerView: 2,
   spaceBetween: 20,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-left',
-    prevEl: '.swiper-button-right',
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
   },
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+	},
 });
 
 let map;
@@ -141,5 +167,6 @@ function initMap() {
   ],
   });
 }
+
 
 window.initMap = initMap;
