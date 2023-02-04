@@ -3,3 +3,71 @@
 @import 'reset';
 
 @import 'global';
+
+
+.header {
+  border-bottom: 1px solid #CACAD6;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.basket {
+  position: relative;
+
+  span {
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    font-size: 11px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: -2px;
+  }
+}
+
+.top {
+  min-height: calc(100vh - 81px);
+  background-image: url(../images/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.title {
+  padding-top: 15%;
+  margin-bottom: 10px;
+  font-size: 96px;
+  line-height: 110px;
+}
+
+.subtitle {
+  font-size: 36px;
+  line-height: 41px;
+  margin-bottom: 5px;
+}
+
+.top__text {
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 50px;
+}
+
+.buy-text {
+  padding-top: 6px;
+  font-size: 13px;
+}
