@@ -31,28 +31,36 @@ body {
   color: $font-color;
 }
 
+button {
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
 .container {
-  max-width: 1200px - 20px;
+  max-width: 1200px + 20px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
 .buy-btn {
-  cursor: pointer;
-  border: none;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   display: flex;
   padding: 1px;
   text-transform: uppercase;
   
-
   &__text {
-    color: #F6F4F5;
+    color: #E6E4E5;
     padding: 20px 110px;
+    text-transform: uppercase;
   }
 
   &__prise {
-    background-color: #F6F4F5;
+    background-color: #E6E4E5;
     padding: 20px 105px;
   }
 }
