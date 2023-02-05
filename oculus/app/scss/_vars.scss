@@ -1,5 +1,18 @@
 $font-color: #5C5C5E;
 
+%dradient-text {
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+%title-with-gradient {
+  @extend %dradient-text;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 41px;
+}
+
 %helv-400 {
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
